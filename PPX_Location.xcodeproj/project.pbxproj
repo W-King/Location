@@ -15,6 +15,10 @@
 		57863CA11DF1506500C50840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57863C9F1DF1506500C50840 /* LaunchScreen.storyboard */; };
 		57863CAC1DF1506500C50840 /* PPX_LocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57863CAB1DF1506500C50840 /* PPX_LocationTests.m */; };
 		57863CB71DF1506500C50840 /* PPX_LocationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57863CB61DF1506500C50840 /* PPX_LocationUITests.m */; };
+		57863CCC1DF150B100C50840 /* BackgroundTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57863CC51DF150B100C50840 /* BackgroundTaskManager.m */; };
+		57863CCD1DF150B100C50840 /* LocationShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57863CC71DF150B100C50840 /* LocationShareModel.m */; };
+		57863CCE1DF150B100C50840 /* LocationTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 57863CC91DF150B100C50840 /* LocationTracker.m */; };
+		57863CCF1DF150B100C50840 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57863CCB1DF150B100C50840 /* LocationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		57863CB21DF1506500C50840 /* PPX_LocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPX_LocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57863CB61DF1506500C50840 /* PPX_LocationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPX_LocationUITests.m; sourceTree = "<group>"; };
 		57863CB81DF1506500C50840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57863CC41DF150B100C50840 /* BackgroundTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundTaskManager.h; sourceTree = "<group>"; };
+		57863CC51DF150B100C50840 /* BackgroundTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundTaskManager.m; sourceTree = "<group>"; };
+		57863CC61DF150B100C50840 /* LocationShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationShareModel.h; sourceTree = "<group>"; };
+		57863CC71DF150B100C50840 /* LocationShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationShareModel.m; sourceTree = "<group>"; };
+		57863CC81DF150B100C50840 /* LocationTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationTracker.h; sourceTree = "<group>"; };
+		57863CC91DF150B100C50840 /* LocationTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationTracker.m; sourceTree = "<group>"; };
+		57863CCA1DF150B100C50840 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		57863CCB1DF150B100C50840 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,14 @@
 			children = (
 				57863C941DF1506500C50840 /* AppDelegate.h */,
 				57863C951DF1506500C50840 /* AppDelegate.m */,
+				57863CC41DF150B100C50840 /* BackgroundTaskManager.h */,
+				57863CC51DF150B100C50840 /* BackgroundTaskManager.m */,
+				57863CC61DF150B100C50840 /* LocationShareModel.h */,
+				57863CC71DF150B100C50840 /* LocationShareModel.m */,
+				57863CC81DF150B100C50840 /* LocationTracker.h */,
+				57863CC91DF150B100C50840 /* LocationTracker.m */,
+				57863CCA1DF150B100C50840 /* LocationViewController.h */,
+				57863CCB1DF150B100C50840 /* LocationViewController.m */,
 				57863C971DF1506500C50840 /* ViewController.h */,
 				57863C981DF1506500C50840 /* ViewController.m */,
 				57863C9A1DF1506500C50840 /* Main.storyboard */,
@@ -208,6 +228,11 @@
 					57863C8D1DF1506500C50840 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					57863CA61DF1506500C50840 = {
 						CreatedOnToolsVersion = 8.1;
@@ -273,9 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57863CCC1DF150B100C50840 /* BackgroundTaskManager.m in Sources */,
 				57863C991DF1506500C50840 /* ViewController.m in Sources */,
+				57863CCF1DF150B100C50840 /* LocationViewController.m in Sources */,
 				57863C961DF1506500C50840 /* AppDelegate.m in Sources */,
+				57863CCD1DF150B100C50840 /* LocationShareModel.m in Sources */,
 				57863C931DF1506500C50840 /* main.m in Sources */,
+				57863CCE1DF150B100C50840 /* LocationTracker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
